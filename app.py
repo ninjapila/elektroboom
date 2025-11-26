@@ -32,7 +32,7 @@ with st.sidebar:
     """)
     
     # TU WKLEJ SWÓJ LINK DO ZRZUTKI / BUYCOFFEE
-    link_do_zrzutki = "https://zrzutka.pl/TWOJ_LINK" 
+    link_do_zrzutki = " https://elektroboom-vbyeg8bnkdmsm4phagnvoy.streamlit.app"
     
     st.link_button("🎨 WPŁAĆ NA TAPETY", link_do_zrzutki)
     st.divider()
