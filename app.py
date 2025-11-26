@@ -20,14 +20,26 @@ st.markdown("### Zamień prąd na paliwo ⛽")
 st.write("System automatycznie wykrywa, kiedy prąd jest najtańszy i przelicza oszczędności na zasięg Twojego samochodu.")
 
 # --- PASEK BOCZNY ---
+# --- PASEK BOCZNY ---
 with st.sidebar:
-    st.header("⚙️ Ustawienia Domowe")
-    moc_pralki = st.slider("Moc urządzenia (kW)", 0.5, 5.0, 2.0, step=0.1, help="Pralka to ok. 2kW, Ładowarka EV to 11kW")
-    czas_trwania = st.slider("Czas pracy (h)", 1, 5, 3)
+    st.image("https://cdn-icons-png.flaticon.com/512/2913/2913008.png", width=100) # Ikona domu/serca
+    st.header("🧸 Operacja: Kolor")
+    st.markdown("""
+    **Cel:** Zamieniamy szare ściany w Domach Dziecka na bajkowe fototapety.
+    
+    Używasz apki za darmo? Zaoszczędziłeś dzisiaj 5 zł?
+    **Wrzuć to do puszki!** 👇
+    """)
+    
+    # TU WKLEJ SWÓJ LINK DO ZRZUTKI / BUYCOFFEE
+    link_do_zrzutki = "https://zrzutka.pl/TWOJ_LINK" 
+    
+    st.link_button("🎨 WPŁAĆ NA TAPETY", link_do_zrzutki)
     st.divider()
-    st.header("🚗 Przelicznik Męża")
-    cena_paliwa = st.number_input("Cena paliwa (PLN)", value=6.40)
-    spalanie = st.number_input("Spalanie auta (L/100km)", value=8.0)
+    
+    st.header("⚙️ Ustawienia Domowe")
+    moc_pralki = st.slider("Moc urządzenia (kW)", 0.5, 5.0, 2.0, step=0.1)
+    czas_trwania = st.slider("Czas pracy (h)", 1, 5, 3)
 
 # --- POBIERANIE DANYCH ---
 @st.cache_data(ttl=900)
