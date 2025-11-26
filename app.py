@@ -1,11 +1,4 @@
-import streamlit as st
-import pandas as pd
-import requests
-import plotly.express as px
-from datetime import datetime
-
-# --- KONFIGURACJA STRONY ---
-st.set_page_config(page_title="Elektroboom ⚡", page_icon="⚡", layout="centered")
+Elektroboom ⚡", page_icon="⚡", layout="centered")
 
 # --- CSS (Wygląd) ---
 st.markdown("""
