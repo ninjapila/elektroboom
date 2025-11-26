@@ -95,7 +95,7 @@ else:
                 najlepsza_h = h
         
         # 3. WYNIKI
-        oszczednosc = koszt_teraz - min_koszt
+        oszczędność = koszt_teraz - min_koszt
         litry = oszczednosc / cena_paliwa
         km = (litry / spalanie) * 100
         
